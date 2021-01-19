@@ -6,6 +6,6 @@ function fibo(num){
     return fiboArr;
 }
 
-var result = fibo(150);
+var result = fibo(15);
 
 console.log(result);
