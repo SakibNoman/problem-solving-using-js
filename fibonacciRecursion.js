@@ -1,12 +1,13 @@
-var fiboArr = [0, 1];
-var currentPosition = 2;
 function fibo(num) {
-    fiboArr[currentPosition] = fiboArr[currentPosition - 1] + fiboArr[currentPosition - 2];
-    currentPosition++;
-    if (currentPosition == num+1) {
-        return fiboArr;
+    if(num==0){
+        return 0;
     }
-    return fibo(num);
+    else if(num==1){
+        return 1;
+    }
+    else{
+        return fibo(num-1)+fibo(num-2);
+    }
 }
 
 var result = fibo(15);
